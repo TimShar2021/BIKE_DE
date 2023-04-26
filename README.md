@@ -35,4 +35,25 @@ To run and evaluate the project, please complete the next steps:
 
 [Terraform](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_1_basics_n_setup/1_terraform_gcp/terraform)
 
+
 • To install the Prefect according to the instruction: 
+
+[Prefect](https://github.com/discdiver/prefect-zoomcamp)
+
+• To fill the tab Variables with the Variables 
+
+• To create a Dataproc cluster in GCP. For your convenience, please use the cluster’s name ‘dezoomcluster’
+
+• To complete the deployment of the flow in Prefect according to the instruction: 
+
+
+        prefect deployment build ./main_flow.py:main_flow -n "MAIN ETL"
+
+        prefect deployment main_flow-deployment.yaml
+        
+
+• To run the Main ETL from the deployment
+
+Then two tables will appear at the Big Query. Based on these tables the dashboard at the Lookerstudio was created. The dashboard is here: 
+
+[Bicycle rental in London](https://lookerstudio.google.com/s/mE1UUVb8oP4)
