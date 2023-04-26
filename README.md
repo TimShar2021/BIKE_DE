@@ -25,6 +25,7 @@ Project steps:
 
 
 To run and evaluate the project, please complete the next steps:
+
 • To create / log in the Big Query account according to the instruction: 
 
 [GCP](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/1_terraform_gcp/2_gcp_overview.md)
