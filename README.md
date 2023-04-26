@@ -9,7 +9,7 @@ In UK there is a state bike sharing program, which exists to stimulate citizens 
 Project problem: 
 
 The data about the bike rides is collected with mistakes, NaNs, without clear structure.
-Project Goal: To process and clear the data of all bike rides from 2012 to 2021 from Cycling.data.tfl.gov.uk and create an easy-to-read dashboard.
+Project Goal: To process and clear the data of all bike rides from 2015 to 2021 from Cycling.data.tfl.gov.uk and create an easy-to-read dashboard.
 
 Project steps:
 
