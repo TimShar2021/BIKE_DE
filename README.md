@@ -1,7 +1,7 @@
 # BIKE_DE
 Pipline for bike sharing data
 
-
+![DFD](/DFD.png)
 
 Background: 
 
