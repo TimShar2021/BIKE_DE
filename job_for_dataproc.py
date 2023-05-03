@@ -10,6 +10,7 @@ from pyspark.sql.functions import col, date_trunc
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--bucket', required=True)
+parser.add_argument('--bucket_dataproc', required=True)
 parser.add_argument('--input_year', required=True)
 parser.add_argument('--output_1', required=True)
 parser.add_argument('--output_2', required=True)
@@ -17,6 +18,7 @@ parser.add_argument('--output_2', required=True)
 args = parser.parse_args()
 
 bucket= args.bucket
+bucket_dataproc = args.bucket_dataproc
 year = args.input_year
 output_1 = args.output_1
 output_2 = args.output_2
@@ -28,7 +30,7 @@ spark = SparkSession.builder \
     .appName('test') \
     .getOrCreate()
 
-spark.conf.set('temporaryGcsBucket', 'dataproc-temp-us-central1-1097968799226-kjm5jv3k')
+spark.conf.set('temporaryGcsBucket', bucket_dataproc)
 
 for m in [1,2,3,4,5,6,7,8,9,10,11,12]:
             try:
