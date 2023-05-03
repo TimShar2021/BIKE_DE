@@ -1,7 +1,7 @@
 
 import os
 from prefect import flow, task
-from variables import bq_connector, my_bucket
+from variables import bq_connector, my_bucket, bucket_dataproc
 
 
 @task()
@@ -13,6 +13,7 @@ def write_to_bq(name_cluster: str, year, dataset_bq: str = 'bicycles_data_all') 
                     --jars={bq_connector} \
                     --\
                         --bucket={my_bucket} \
+                        --bucket_dataproc={bucket_dataproc} \
                         --input_year={year} \
                         --output_1={dataset_bq}.station_bike \
                         --output_2={dataset_bq}.report_bike 
