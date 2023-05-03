@@ -16,6 +16,9 @@ credentials_location = '----------.json'
 # Bucket GCP 
 my_bucket = 'gs://--------'
 
+# Bucket for dataproc  
+bucket_dataproc = 'dataproc-temp---------'
+
 # BQ connector
 # Ref:https://cloud.google.com/dataproc/docs/tutorials/bigquery-connector-spark-example
 
